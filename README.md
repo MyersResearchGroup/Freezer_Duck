@@ -3,3 +3,40 @@
 
 <img src="https://github.com/MyersResearchGroup/Freezer_Duck/blob/main/images/freezerducklogo1.jpeg#gh-light-mode-only" alt="PUDU logo" width="250"/>
 <img src="https://github.com/MyersResearchGroup/Freezer_Duck/blob/main/images/freezerducklogo1.jpeg#gh-dark-mode-only" alt="PUDU night logo" width="250"/>
+
+## Parts needed ##
+ - Arduino nano 33 IOT or ESP32 as microcontroller
+ - Pmod TC1
+
+##  Pinout ##
+  Pmod TC1 <----------> Arduino nano 33 IOT
+  
+  VCC     to          3v3
+  
+  GND     to          GND
+  
+  SCK     to          13
+  
+  MISO    to          12
+  
+  CS      to          10
+  
+Associated pins for ESP32 or wifi enabled microcontroller can be found when looking at associated pinout guide.
+
+## Changes to base code ##
+ - Wifi edits
+   - WIFI_SSID (change to network name of wifi used)
+   - WIFI_PASSWORD (change to network password leave "" if no password needed)
+ - Email port
+   - if not using an outlook email change SMTP_HOST and SMTP_PORT to appropriate host/post (information about this can be found by Rui Santos' project information
+ - Email sender
+   - create specific email account for device or use existing email
+   - change AUTHOR_EMAIL to desired sender and AUTHOR_PASSWORD to the sender email's password
+ - Email recipents
+   - in *Recipient_email[]={"email1","email2"} change the emails to the desired email recievers
+
+## Limitations on current system ##
+This system is not the most exact system for below -70°C due to limitations of the thermocoupling wire. This means that for the system it is more of a warning system for extreme drops in tempurature that are dangerous towards preservation of biological materials. Due to this limitation drops above -60°C to -65°C should be used as a marker that something is wrong in this system. 
+
+## Issues with current code ##
+Due to believed issues with the wifi system at CU Boulder, the http/https system that exists with interfacing with the email server has authetication issues. This could also be caused by the change in authetification used by outlook to check SMTP communication. Provided it is a wifi issue, consulting with OIT to discuss firewall work arounds would be beneficial or having a in-lab wifi router to avoid communication issues. 
