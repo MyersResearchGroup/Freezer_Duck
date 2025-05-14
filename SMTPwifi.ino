@@ -47,7 +47,7 @@ unsigned long StartTime=0;
 /* The sign in credentials */
 #define AUTHOR_EMAIL "YXBpa2V5"
 #define AUTHOR_PASSWORD "NHM5LXVVN3hUODI0RzE4NGYtN0FIUS4xNVJxZ3Z2REJLZ09McWtsalQ3MDJQQUtaZkp0UEdtV2taalB2bHFORC1v"
-#this is encrypted password for sendgrid, will add actually password later
+//this is encrypted password for sendgrid, will add actually password later
 
 
 /* Recipient's email*/
