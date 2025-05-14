@@ -4,7 +4,7 @@
 <img src="https://github.com/MyersResearchGroup/Freezer_Duck/blob/main/images/freezerducklogo1.jpeg#gh-light-mode-only" alt="PUDU logo" width="250"/>
 <img src="https://github.com/MyersResearchGroup/Freezer_Duck/blob/main/images/freezerducklogo1.jpeg#gh-dark-mode-only" alt="PUDU night logo" width="250"/>
 
-## Steps for set-up##
+## Steps for set-up ##
 1. Acquire parts and wire up microcontroller and sensor properly
 2. Install arduino (if not already on device) and packages needed to run script
 3. Adjust Wifi login information to local Wifi using WIFI_SSID and WIFI_PASSWORD
