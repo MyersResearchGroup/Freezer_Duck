@@ -52,7 +52,7 @@ unsigned long StartTime=0;
 
 /* Recipient's email*/
 //# define RECIPIENT_EMAIL "parker.ackerknecht@colorado.edu"
-char *RECIPIENT_EMAIL[] ={"freezerDuck@outlook.com"};
+char *RECIPIENT_EMAIL[] ={"freezerDuck@outlook.com"}; // this is just sending to the sender email for tests, look next line for multiple recepients
 // char *RECIPIENT_EMAIL[] ={"freezerDuck@outlook.com","chris.myers@colorado.edu","Gonzalo.VidalPena@colorado.edu"};
 
 /* Declare the global used SMTPSession object for SMTP transport */
